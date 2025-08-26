@@ -1,0 +1,9 @@
+[global]
+WORKGROUP = ALI
+realm = ALI.COM
+security = ads
+idmap config * : range = 100000-199999
+winbind use default domain = true
+winbind offline logon = false
+template shell = /bin/bash
+template homedir = /home/%U 
